@@ -12,7 +12,10 @@
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
+    "npm": "^5.8.0",
     "pug": "2.0.0-beta11",
+    "request": "^2.85.0",
+    "request-promise": "^4.2.2",
     "tedious": "^2.3.1"
   }
 }

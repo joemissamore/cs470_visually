@@ -10,3 +10,24 @@ exports.getAll = function(callback) {
         callback(err, result);
     });
 };
+
+
+// exports.insert = function(params, callback) {
+//     var query = 'INSERT INTO account (first_name, last_name, email) VALUES (?, ?, ?)';
+//
+//     // the question marks in the sql query above will be replaced by the values of the
+//     // the data in queryData
+//     var queryData = [params.first_name, params.last_name, params.email];
+//
+//     connection.query(query, queryData, function(err, result) {
+//         callback(err, result);
+//     });
+
+exports.newUser = function(params, callback) {
+    var query = 'INSERT INTO Users(user_name, user_email, user_password) VALUES(?, ?, ?)';
+    var queryData = [params.user_name, params.user_email, params.user_password]
+
+    connection.query(query, queryData, function(err, result) {
+            callback(err, result);
+        });
+};
